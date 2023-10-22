@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+  php:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /home/debian/docker/xenforo/_data:/var/www/html/
+
+  web:
+    image: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - /home/debian/docker/xenforo/_data:/var/www/html/
+      - ./stp.conf:/etc/nginx/conf.d/stp.conf
+    links:
+      - php
+
+  mysql:
+    image: mariadb
+    environment:
+      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    links:
+      - web
+    ports:
+      - "3306:3306"
+    volumes:
+      - /home/debian/docker/mysql/_data:/var/lib/mysql
