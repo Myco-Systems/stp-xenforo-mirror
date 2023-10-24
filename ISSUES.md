@@ -12,13 +12,18 @@
 
 ### Environment (Fill in one, delete the other)
 
-Debian:
+#### Debian:
 - Debian Version:
 - Docker Version:
 - Docker Compose File:
-[Place your compose file here, the starting and ending line should be ``` to make it a codeblock]
 
-Web:
+[Starting and ending line should be ``` to make it a codeblock]
+
+- Docker .env File:
+
+[Starting and ending line should be ``` to make it a codeblock]
+
+#### Web:
 - Browser: [Browser and Version]
 - Extensions: [Installed and running extensions]
 
