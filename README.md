@@ -42,7 +42,13 @@ After that the nginx webserver will be running on port 8080, currently the expec
 
 ## Issues
 
+### Github
+
 To report an issue go to https://github.com/Myco-Systems/stp-xenforo-mirror/blob/main/ISSUES.md and copy the raw markdown, then head over to https://github.com/Myco-Systems/stp-xenforo-mirror/issues and press "New Issue"
+
+### Gitea
+
+To report an issue go to https://git.myco.systems/stp/xenforo/src/branch/main/ISSUES.md and copy the raw markdown, then head over to https://git.myco.systems/stp/xenforo/issues and press "New Issue"
 
 ## License
 
