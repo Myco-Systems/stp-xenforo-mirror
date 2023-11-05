@@ -1,5 +1,8 @@
 # Xenforo StP Repo
 
+Github mirror:
+https://github.com/Myco-Systems/stp-xenforo-mirror/
+
 ## Downloading and building (run as root or enable docker rootless)
 ```
 curl -sSfL get.docker.com | bash
