@@ -1,5 +1,6 @@
 version: "3"
 
+
 services:
   php:
     build:
@@ -14,7 +15,8 @@ services:
       - "8080:80"
     volumes:
       - /home/debian/docker/xenforo/_data:/var/www/html/
-      - ./stp.conf:/etc/nginx/conf.d/stp.conf
+      - /home/debian/docker/nginx:/etc/nginx/conf.d/
+      - /home/debian/docker/access.log:/var/log/nginx/access.log
     links:
       - php
 
