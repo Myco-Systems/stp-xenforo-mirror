@@ -1,3 +1,4 @@
 xenforo/
 mysql/
 .env
+access.log
